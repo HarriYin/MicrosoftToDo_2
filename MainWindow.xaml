@@ -27,8 +27,8 @@
             <TextBlock
                 Margin="10,10,0,20"
                 DockPanel.Dock="Top"
-                Foreground="#FF737373"
                 FontSize="12"
+                Foreground="#FF737373"
                 Text="Microsoft To Do" />
 
             <DockPanel
@@ -113,7 +113,10 @@
 
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <DockPanel Margin="15,0,0,0" LastChildFill="False">
+                        <DockPanel
+                            Margin="15,0,0,0"
+                            Background="Transparent"
+                            LastChildFill="False">
                             <TextBlock Style="{StaticResource iconTextBlockStyle}" Text="{Binding Icon}" />
                             <TextBlock
                                 Margin="10,0,0,0"
